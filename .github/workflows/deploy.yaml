@@ -38,7 +38,7 @@ jobs:
         with:
           team: min-side # Change this to your team name
           source: ./dist/client/_astro
-          destination: 'tms-microfrontend-template-ssr' # Change this to your application name
+          destination: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change this to your application name
 
       - name: "Build and push"
         uses: nais/docker-build-push@v0
@@ -53,9 +53,9 @@ jobs:
     uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
     needs: build
     with:
-      id: "tms-microfrontend-template-ssr" # Change this to your microfrontend id.
-      url: "http://tms-microfrontend-template-ssr" # Change the url to contain your application name. Example: http://my-app
-      appname: "tms-microfrontend-template-ssr" # Change this to your application name
+      id: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change this to your microfrontend id.
+      url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change the url to contain your application name. Example: http://my-app
+      appname: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change this to your application name
       namespace: "min-side" # Change this to your namespace
       cluster: dev-gcp
       commitmsg: ${{ github.event.head_commit.message}}
@@ -68,9 +68,9 @@ jobs:
   #   uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
   #   needs: build
   #   with:
-  #     id: "tms-microfrontend-template-ssr-id"
-  #     url: "http://tms-microfrontend-template-ssr.min-side"
-  #     appname: "tms-microfrontend-template-ssr"
+  #     id: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr-id"
+  #     url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.min-side"
+  #     appname: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr"
   #     namespace: "team-namespace"
   #     cluster: prod-gcp
   #     commitmsg: ${{ github.event.head_commit.message}}
@@ -108,4 +108,4 @@ jobs:
   #       env:
   #         CLUSTER: prod-gcp
   #         RESOURCE: nais/prod-gcp/nais.yaml
-  #         VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}          
+  #         VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}

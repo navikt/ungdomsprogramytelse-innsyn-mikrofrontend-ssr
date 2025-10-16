@@ -29,4 +29,10 @@ jspm_packages/
 # Astro files
 .astro/
 
+# Yarn files
+.yarn/cache/
+.yarn/install-state.gz
+.yarn/build-state.yml
+.pnp.*
+
 todos.txt

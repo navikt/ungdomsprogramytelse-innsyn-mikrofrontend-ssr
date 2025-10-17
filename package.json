@@ -6,7 +6,6 @@
         "dev": "astro dev",
         "start": "astro dev",
         "build": "astro check && astro build",
-        "mock": "tsx mock/server.ts",
         "preview": "astro preview",
         "astro": "astro",
         "prepare": "husky"

@@ -54,7 +54,7 @@ jobs:
     needs: build
     with:
       id: "ungdomsprogramytelse-innsyn" # Change this to your microfrontend id.
-      url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change the url to contain your application name. Example: http://my-app
+      url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.dusseldorf" # Change the url to contain your application name. Example: http://my-app
       appname: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr" # Change this to your application name
       namespace: "dusseldorf" # Change this to your namespace
       cluster: dev-gcp

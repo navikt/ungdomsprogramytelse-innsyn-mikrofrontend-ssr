@@ -1,7 +1,7 @@
 export const text = {
     overskrift: {
-        nb: 'Ungdomsprogramytelsen',
-        nn: 'Ungdomsprogramytelsen',
+        nb: 'Ungdoms\u00ADprogram\u00ADytelsen',
+        nn: 'Ungdoms\u00ADprogram\u00ADytelsen',
         en: 'Youth Program',
     },
     underoverskrift: {

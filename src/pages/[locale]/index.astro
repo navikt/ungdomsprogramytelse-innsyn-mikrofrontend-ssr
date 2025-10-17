@@ -1,7 +1,6 @@
 ---
 import { text } from '@src/language/text';
 import type { Language } from '@src/language/types';
-import styles from '@src/styles/index.module.css';
 import '@src/styles/aksel.css';
 import { isLocal } from '../../utils/environment';
 import Komponent from '@src/components/Komponent.astro';
@@ -11,7 +10,5 @@ const language = Astro.currentLocale as Language;
 
 {isLocal && <meta charset="UTF-8" />}
 <section class="ungdomsprogramytelse-innsyn-mikrofrontend-ssr">
-    <div class={styles.microfrontend}>
-        <Komponent heading={text.overskrift[language]} description={text.underoverskrift[language]} />
-    </div>
+    <Komponent heading={text.overskrift[language]} description={text.underoverskrift[language]} />
 </section>

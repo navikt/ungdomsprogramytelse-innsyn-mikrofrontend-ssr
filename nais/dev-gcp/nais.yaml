@@ -2,9 +2,9 @@ apiVersion: "nais.io/v1alpha1"
 kind: "Application"
 metadata:
   name: ungdomsprogramytelse-innsyn-mikrofrontend-ssr # Change this to your application name
-  namespace: min-side # Change this to your namespace
+  namespace: dusseldorf # Change this to your namespace
   labels:
-    team: min-side # Change this to your team name
+    team: dusseldorf # Change this to your team name
 spec:
   observability:
     autoInstrumentation:
@@ -34,6 +34,6 @@ spec:
     requests:
       cpu: "20m"
       memory: 128Mi
-  env: # Add your environment variables here
-    - name: EXAMPLE_API_URL
-      value: "https://example.dev.nav.no/api"
+  env:
+    - name: INNSYN_UNGDOMSYTELSE_DELTAKER_URL
+      value: "https://ungdomsytelse-deltaker.intern.dev.nav.no/ungdomsprogrammet/ytelsen"

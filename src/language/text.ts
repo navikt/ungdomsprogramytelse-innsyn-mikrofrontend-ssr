@@ -1,17 +1,12 @@
 export const text = {
-    title: {
-        nb: 'ungdomsprogramytelse-innsyn-mikrofrontend-ssr (nb)',
-        en: 'ungdomsprogramytelse-innsyn-mikrofrontend-ssr (en)',
-        nn: 'ungdomsprogramytelse-innsyn-mikrofrontend-ssr (nn)',
+    overskrift: {
+        nb: 'Ungdomsprogramytelsen',
+        nn: 'Ungdomsprogramytelsen',
+        en: 'Youth Program',
     },
-    link: {
-        nb: 'Lenke',
-        en: 'Link',
-        nn: 'Lenkje',
-    },
-    name: {
-        nb: 'Navn',
-        en: 'Name',
-        nn: 'Navn',
+    underoverskrift: {
+        nb: 'Oversikt over saken din',
+        nn: 'Oversikt over saka di',
+        en: 'Overview of your case',
     },
 };

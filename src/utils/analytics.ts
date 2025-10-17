@@ -5,6 +5,6 @@ type ExtendedAmpltitudeEvent = AmplitudeEvent<'navigere', { lenketekst: string }
 
 const analyticsLogger = getAnalyticsInstance<ExtendedAmpltitudeEvent>('ungdomsprogramytelse-innsyn-mikrofrontend-ssr');
 
-export const logEvent = async (lenketekst: string) => {
-    await analyticsLogger('navigere', { lenketekst: lenketekst });
+export const logNavigerTilUngdomsprogramytelsen = async () => {
+    await analyticsLogger('navigere', { lenketekst: 'Ungdomsprogramytelsen' });
 };

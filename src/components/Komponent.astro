@@ -1,0 +1,20 @@
+---
+import LinkCard from './link-card/LinkCard.astro';
+import Piktogram from './Piktogram.astro';
+import styles from './Komponent.module.css';
+import { BodyLong, Heading } from '@navikt/ds-react';
+
+const { heading, description } = Astro.props;
+---
+
+<LinkCard>
+    <div class={styles.komponentContainer}>
+        <div>
+            <Piktogram />
+        </div>
+        <div>
+            <Heading size="small" className={styles.heading}>{heading}</Heading>
+            <BodyLong size="medium" className={styles.detail}>{description}</BodyLong>
+        </div>
+    </div>
+</LinkCard>

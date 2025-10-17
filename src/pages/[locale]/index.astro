@@ -1,47 +1,17 @@
 ---
-import { EXAMPLE_API_URL } from 'astro:env/server';
-import { BodyShort, Heading, Link } from '@navikt/ds-react';
-import ClientIsland from '@src/components/ClientIsland';
 import { text } from '@src/language/text';
 import type { Language } from '@src/language/types';
 import styles from '@src/styles/index.module.css';
-import { isLocal } from '@src/utils/environment';
-import { fetchExampleData } from '@src/utils/fetch';
-import { logger } from '@src/utils/logger';
-import { getOboToken } from '@src/utils/token';
 import '@src/styles/aksel.css';
-
-const oboToken = await getOboToken(Astro.locals.token);
-let exampleData: any;
-
-try {
-    exampleData = await fetchExampleData(oboToken, EXAMPLE_API_URL);
-} catch (error) {
-    logger.error(`Error fetching example data: ${error}`);
-    return new Response('Internal Server Error', { status: 503 });
-}
+import { isLocal } from '../../utils/environment';
+import Komponent from '@src/components/Komponent.astro';
 
 const language = Astro.currentLocale as Language;
 ---
 
 {isLocal && <meta charset="UTF-8" />}
 <section class="ungdomsprogramytelse-innsyn-mikrofrontend-ssr">
-  <div class={styles.microfrontend}>
-    <Heading size="medium" level="2">
-      {text.title[language]}
-    </Heading>
-    <BodyShort>
-      {text.name[language]}: {exampleData.name}
-    </BodyShort>
-    <Link href="#" id="link">
-      {text.link[language]}
-    </Link>
-    <ClientIsland client:only="react" />
-  </div>
+    <div class={styles.microfrontend}>
+        <Komponent heading={text.overskrift[language]} description={text.underoverskrift[language]} />
+    </div>
 </section>
-<script>
-  import { logEvent } from "@src/utils/analytics";
-
-  const microfrontend = document.querySelector("#link");
-  microfrontend?.addEventListener("click", () => logEvent("Lenke"));
-</script>

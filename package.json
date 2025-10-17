@@ -1,5 +1,5 @@
 {
-    "name": "ungdomsprogramytelse-innsyn-mikrofrontend-ssr",
+    "name": "@navikt/ungdomsprogramytelse-innsyn-mikrofrontend-ssr",
     "type": "module",
     "version": "0.0.1",
     "scripts": {

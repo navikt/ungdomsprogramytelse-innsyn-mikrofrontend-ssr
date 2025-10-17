@@ -7,14 +7,22 @@ import { BodyLong, Heading, Hide } from '@navikt/ds-react';
 const { heading, description } = Astro.props;
 ---
 
-<LinkCard>
-    <div class={styles.komponentContainer}>
-        <Hide below="sm">
-            <Piktogram />
-        </Hide>
-        <div>
-            <Heading level="3" size="small" className={styles.heading}>{heading}</Heading>
-            <BodyLong size="medium" className={styles.detail}>{description}</BodyLong>
+<div id="linkCard">
+    <LinkCard>
+        <div class={styles.komponentContainer}>
+            <Hide below="sm">
+                <Piktogram />
+            </Hide>
+            <div>
+                <Heading level="3" size="small" className={styles.heading}>{heading}</Heading>
+                <BodyLong size="medium" className={styles.detail}>{description}</BodyLong>
+            </div>
         </div>
-    </div>
-</LinkCard>
+    </LinkCard>
+</div>
+
+<script>
+    import { logCardClick } from '@src/utils/analytics.ts';
+    const linkCard = document.querySelector('#linkCard a');
+    linkCard?.addEventListener('click', () => logCardClick((linkCard as any).href));
+</script>

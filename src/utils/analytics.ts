@@ -1,10 +1,10 @@
-import type { AmplitudeEvent } from '@navikt/nav-dekoratoren-moduler';
+import type { AnalyticsEvent } from '@navikt/nav-dekoratoren-moduler';
 import { getAnalyticsInstance } from '@navikt/nav-dekoratoren-moduler';
 
-type ExtendedAmpltitudeEvent = AmplitudeEvent<'navigere', { lenketekst: string }>;
+type NavigereAnalyticsEvent = AnalyticsEvent<'navigere', { lenketekst: string; destinasjon: string }>;
 
-const analyticsLogger = getAnalyticsInstance<ExtendedAmpltitudeEvent>('ungdomsprogramytelse-innsyn-mikrofrontend-ssr');
+const analyticsLogger = getAnalyticsInstance<NavigereAnalyticsEvent>('ungdomsprogramytelse-innsyn-mikrofrontend-ssr');
 
-export const logCardClick = async () => {
-    await analyticsLogger('navigere', { lenketekst: 'Ungdomsprogramytelsen' });
+export const logCardClick = async (url: string) => {
+    await analyticsLogger('navigere', { lenketekst: 'Ungdomsprogramytelsen', destinasjon: url });
 };

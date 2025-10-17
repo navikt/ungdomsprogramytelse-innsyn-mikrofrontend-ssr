@@ -8,7 +8,6 @@
     text-decoration: none;
     box-shadow: var(--a-shadow-xsmall);
 }
-
 #linkcard:hover {
     border-color: var(--a-border-subtle);
     box-shadow: var(--a-shadow-small);
@@ -29,7 +28,7 @@
     }
 }
 
-#linkcard:hover h1 {
+#linkcard:hover h3 {
     text-decoration: underline;
 }
 

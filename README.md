@@ -1,26 +1,12 @@
 # ungdomsprogramytelse-innsyn-mikrofrontend-ssr
 
-Kan brukes som utgangspunkt for å opprette nye server-side rendrede microfrontends til Min Side.
+Mikfrontenden blir lastet opp til nav sin CDN ved push til main og har et manifest som deployes til Nais.
 
 # Kom i gang
 
-## Tilpasse templatet til ditt prosjekt
-
-1. `CMD + Shift + F` og søk etter `ungdomsprogramytelse-innsyn-mikrofrontend-ssr` og erstatt dette med ditt applikasjonsnavn.
-2. Bytt ut "min-side" med ditt teams CDN folder (som regel ditt teams navn) i urlen i assetPrefix i astro.config.mjs 
-3. Tilpass innholdet i `nais/dev-gcp/nais.yaml` og `nais/prod-gcp/nais.yaml` til ditt prosjekt.
-4. Tilpass innholdet i `.github/workflows/deploy.yaml` til ditt prosjekt.
-5. Be om tilgang til å oppdatere manifestet og deploye applikasjonen til nais på slack kanalen [#minside-microfrontends](https://nav-it.slack.com/archives/C04V21LT27P).
-6. Kommenter ut `update-manifest-prod-gcp` og `deploy-prod-gcp` stegene i `.github/workflows/deploy.yaml`.
-
-NOTE: Du bør se på konteksten i filen du endrer.
-
-# Kjøre appen lokalt
-
-1. Installer dependencies: `npm i`
-2. Start hono mockserver: `npm run mock`
-3. Med mockserver kjørende i egen terminal, start appen: `npm run dev`
-4. Appen nås på http://localhost:4321/
+1. Bygg k9-innsyn-dine-pleiepenger-mikrofrontend-ssr ved å kjøre npm run build
+2. Start appen lokalt ved å kjøre npm run dev
+3. Appen nås på http://localhost:4322/
 
 # Henvendelser
 
@@ -28,4 +14,4 @@ Spørsmål knyttet til koden eller prosjektet kan stilles som issues her på git
 
 ## For NAV-ansatte
 
-Interne henvendelser kan sendes via Slack i kanalen [#minside-microfrontends](https://nav-it.slack.com/archives/C04V21LT27P).
+Interne henvendelser kan sendes via Slack i kanalen #k9-brukerdialog.

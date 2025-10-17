@@ -68,10 +68,10 @@ jobs:
   #   uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
   #   needs: build
   #   with:
-  #     id: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr-id"
-  #     url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.min-side"
+  #     id: "ungdomsprogramytelse-innsyn"
+  #     url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.dusseldorf"
   #     appname: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr"
-  #     namespace: "team-namespace"
+  #     namespace: "dusseldorf"
   #     cluster: prod-gcp
   #     commitmsg: ${{ github.event.head_commit.message}}
   #     fallback: "fallback" # Should containt the path to the fallback page after src/pages/[locale]/...

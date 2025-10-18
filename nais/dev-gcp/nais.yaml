@@ -28,6 +28,10 @@ spec:
       rules:
         - application: tms-min-side
           namespace: min-side
+    outbound:
+      rules:
+        - application: ung-deltakelse-opplyser
+          namespace: dusseldorf
   resources:
     limits:
       memory: 768Mi

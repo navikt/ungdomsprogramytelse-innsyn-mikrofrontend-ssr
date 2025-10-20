@@ -4,7 +4,7 @@ Mikfrontenden blir lastet opp til nav sin CDN ved push til main og har et manife
 
 # Kom i gang
 
-1. Bygg k9-innsyn-dine-pleiepenger-mikrofrontend-ssr ved å kjøre npm run build
+1. Bygg ungdomsprogramytelse-innsyn-mikrofrontend-ssr ved å kjøre npm run build
 2. Start appen lokalt ved å kjøre npm run dev
 3. Appen nås på http://localhost:4322/
 

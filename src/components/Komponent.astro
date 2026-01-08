@@ -10,9 +10,7 @@ const { heading, description } = Astro.props;
 <div id="linkCard">
     <LinkCard>
         <div class={styles.komponentContainer}>
-            <Hide below="sm">
-                <Piktogram />
-            </Hide>
+            <Piktogram />
             <div>
                 <Heading level="3" size="small" className={styles.heading}>{heading}</Heading>
                 <BodyLong size="medium" className={styles.detail}>{description}</BodyLong>

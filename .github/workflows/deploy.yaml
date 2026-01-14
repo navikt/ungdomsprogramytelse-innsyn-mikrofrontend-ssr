@@ -17,10 +17,18 @@ jobs:
 
     steps:
       - uses: "actions/checkout@v4"
+
+      - name: "Setup .yarnrc.yml"
+        run: |
+          yarn config set npmScopes.navikt.npmRegistryServer "https://npm.pkg.github.com"
+          yarn config set npmScopes.navikt.npmAlwaysAuth true
+          yarn config set npmScopes.navikt.npmAuthToken $NODE_AUTH_TOKEN
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
+
       - uses: "actions/setup-node@v4"
         with:
           node-version: 22
-          registry-url: "https://npm.pkg.github.com"
           cache: "yarn"
 
       - name: "Install dependencies"

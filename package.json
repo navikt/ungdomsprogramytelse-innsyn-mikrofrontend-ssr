@@ -9,7 +9,8 @@
         "build": "astro check && astro build",
         "preview": "astro preview",
         "astro": "astro",
-        "prepare": "husky"
+        "prepare": "husky",
+        "ci": "yarn install --immutable"
     },
     "dependencies": {
         "@astrojs/check": "0.9.6",

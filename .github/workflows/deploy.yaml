@@ -15,18 +15,19 @@ jobs:
       id-token: "write"
       packages: "write"
 
+    env:
+      YARN_NPM_SCOPES_NAVIKT_NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
+
     steps:
       - uses: "actions/checkout@v4"
+
       - uses: "actions/setup-node@v4"
         with:
           node-version: 22
-          registry-url: "https://npm.pkg.github.com"
           cache: "yarn"
 
       - name: "Install dependencies"
         run: "yarn ci"
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
       - name: "Build application"
         run: "yarn build"

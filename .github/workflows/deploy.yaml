@@ -16,14 +16,10 @@ jobs:
       packages: "write"
 
     env:
-      YARN_NPM_SCOPES_NAVIKT_NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
+      YARN_NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
     steps:
       - uses: "actions/checkout@v4"
-
-      - name: "Clean yarn global config"
-        run: |
-          rm -f ~/.yarnrc.yml
 
       - uses: "actions/setup-node@v4"
         with:

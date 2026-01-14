@@ -27,7 +27,7 @@ jobs:
           cache: "yarn"
 
       - name: "Install dependencies"
-        run: "yarn ci"
+        run: "yarn install --immutable"
 
       - name: "Build application"
         run: "yarn build"

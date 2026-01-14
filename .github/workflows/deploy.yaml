@@ -21,15 +21,15 @@ jobs:
         with:
           node-version: 22
           registry-url: "https://npm.pkg.github.com"
-          cache: "npm"
+          cache: "yarn"
 
       - name: "Install dependencies"
-        run: "npm ci"
+        run: "yarn ci"
         env:
           NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
       - name: "Build application"
-        run: "npm run build"
+        run: "yarn build"
         env:
           ASTRO_KEY: ${{ secrets.ASTRO_KEY }}
 

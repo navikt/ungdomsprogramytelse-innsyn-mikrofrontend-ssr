@@ -53,6 +53,8 @@ jobs:
   update-manifest-dev:
     uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
     needs: build
+    permissions:
+      contents: "read"
     with:
       id: "ungdomsprogramytelse-innsyn" # Change this to your microfrontend id.
       url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.dusseldorf" # Change the url to contain your application name. Example: http://my-app
@@ -68,6 +70,8 @@ jobs:
     if: github.ref == 'refs/heads/main'
     uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
     needs: build
+    permissions:
+      contents: "read"
     with:
       id: "ungdomsprogramytelse-innsyn"
       url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.dusseldorf"

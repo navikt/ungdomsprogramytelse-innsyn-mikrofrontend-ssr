@@ -23,8 +23,8 @@
         "@opentelemetry/sdk-node": "0.211.0",
         "astro": "5.16.15",
         "pino": "10.3.0",
-        "react": "19.2.3",
-        "react-dom": "19.2.3",
+        "react": "19.2.4",
+        "react-dom": "19.2.4",
         "rollup-plugin-import-map": "3.0.0"
     },
     "devDependencies": {
@@ -32,7 +32,7 @@
         "@types/node": "24.1.0",
         "@types/react": "19.2.9",
         "@types/react-dom": "19.2.3",
-        "hono": "4.11.5",
+        "hono": "4.11.6",
         "husky": "9.1.7",
         "lint-staged": "16.2.7",
         "postcss": "8.5.6",

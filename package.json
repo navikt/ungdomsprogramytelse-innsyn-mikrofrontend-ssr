@@ -47,5 +47,8 @@
             "prettier --write"
         ]
     },
+    "resolutions": {
+        "@isaacs/brace-expansion": "5.0.1"
+    },
     "npmMinimalAgeGate": 1440
 }

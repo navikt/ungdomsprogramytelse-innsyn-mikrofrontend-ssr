@@ -100,16 +100,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/node@npm:9.5.3":
-  version: 9.5.3
-  resolution: "@astrojs/node@npm:9.5.3"
+"@astrojs/node@npm:9.5.4":
+  version: 9.5.4
+  resolution: "@astrojs/node@npm:9.5.4"
   dependencies:
     "@astrojs/internal-helpers": "npm:0.7.5"
     send: "npm:^1.2.1"
     server-destroy: "npm:^1.0.1"
   peerDependencies:
-    astro: ^5.14.3
-  checksum: 10/af66f3bafc8cc7d8a54861deb9b3c55cf9b3a3aa18762784fb300ece3e325a80037bae391ab9f60dd4e5530c71afbd18dbc94e039f5ac5735259b6ecb0ebb3af
+    astro: ^5.17.3
+  checksum: 10/c87c139ac4eba3acde8a9e3c0c5f05e2ae076aa9faae656c9eb97c2565cc0838f66ec41e240e0609223a5de69ae579fd63d12ed5b978114b8a3e607091fbdffe
   languageName: node
   linkType: hard
 
@@ -1097,7 +1097,7 @@ __metadata:
   resolution: "@navikt/ungdomsprogramytelse-innsyn-mikrofrontend-ssr@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.6"
-    "@astrojs/node": "npm:9.5.3"
+    "@astrojs/node": "npm:9.5.4"
     "@astrojs/react": "npm:4.4.2"
     "@hono/node-server": "npm:1.19.9"
     "@navikt/aksel-icons": "npm:7.40.0"
@@ -1106,11 +1106,11 @@ __metadata:
     "@navikt/nav-dekoratoren-moduler": "npm:3.6.2"
     "@navikt/oasis": "npm:4.1.4"
     "@opentelemetry/sdk-node": "npm:0.212.0"
-    "@types/node": "npm:24.1.0"
+    "@types/node": "npm:24.10.13"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
     astro: "npm:5.17.3"
-    hono: "npm:4.11.9"
+    hono: "npm:4.11.10"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.2.7"
     pino: "npm:10.3.1"
@@ -1994,12 +1994,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:24.1.0":
-  version: 24.1.0
-  resolution: "@types/node@npm:24.1.0"
+"@types/node@npm:24.10.13":
+  version: 24.10.13
+  resolution: "@types/node@npm:24.10.13"
   dependencies:
-    undici-types: "npm:~7.8.0"
-  checksum: 10/02c3d91e1407a93a2363f97a245475fa0f6209d3f3e6ba9fdaabe65389e3e078f648da81b8738125dec6b6bf98c50fb928f36f4e72b8b015817bc21479a868c2
+    undici-types: "npm:~7.16.0"
+  checksum: 10/c779d14cf17758a9d603e0c0978c8045bd070e259617ec16f4ddac419ec11aac0e0cf2bb013dab008fdbd2f46c39f82397884662bbdfabeb19bef0079679ea48
   languageName: node
   linkType: hard
 
@@ -2195,15 +2195,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ajv@npm:^8.17.1":
-  version: 8.17.1
-  resolution: "ajv@npm:8.17.1"
+"ajv@npm:8.18.0":
+  version: 8.18.0
+  resolution: "ajv@npm:8.18.0"
   dependencies:
     fast-deep-equal: "npm:^3.1.3"
     fast-uri: "npm:^3.0.1"
     json-schema-traverse: "npm:^1.0.0"
     require-from-string: "npm:^2.0.2"
-  checksum: 10/ee3c62162c953e91986c838f004132b6a253d700f1e51253b99791e2dbfdb39161bc950ebdc2f156f8568035bb5ed8be7bd78289cd9ecbf3381fe8f5b82e3f33
+  checksum: 10/bfed9de827a2b27c6d4084324eda76a4e32bdde27410b3e9b81d06e6f8f5c78370fc6b93fe1d869f1939ff1d7c4ae8896960995acb8425e3e9288c8884247c48
   languageName: node
   linkType: hard
 
@@ -3459,10 +3459,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:4.11.9":
-  version: 4.11.9
-  resolution: "hono@npm:4.11.9"
-  checksum: 10/4332c09f446782da981b488e206dc4509bbd812f795f27cf532e3342f6f2e418cad5549859e35725cc0f8029ecb8f19ef74a7fc94a11f91c3988540c3176ca86
+"hono@npm:4.11.10":
+  version: 4.11.10
+  resolution: "hono@npm:4.11.10"
+  checksum: 10/9b96432805eeaf59e783eb0a44e7be0957ddff28bb03f0f0a720792e9ad3563c8a036ed1e652bdb439f5f30546d3d6b71643be5187ff09603b4e6d877029c1de
   languageName: node
   linkType: hard
 
@@ -6005,13 +6005,6 @@ __metadata:
   version: 7.16.0
   resolution: "undici-types@npm:7.16.0"
   checksum: 10/db43439f69c2d94cc29f75cbfe9de86df87061d6b0c577ebe9bb3255f49b22c50162a7d7eb413b0458b6510b8ca299ac7cff38c3a29fbd31af9f504bcf7fbc0d
-  languageName: node
-  linkType: hard
-
-"undici-types@npm:~7.8.0":
-  version: 7.8.0
-  resolution: "undici-types@npm:7.8.0"
-  checksum: 10/fcff3fbab234f067fbd69e374ee2c198ba74c364ceaf6d93db7ca267e784457b5518cd01d0d2329b075f412574205ea3172a9a675facb49b4c9efb7141cd80b7
   languageName: node
   linkType: hard
 

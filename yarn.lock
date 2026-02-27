@@ -1291,8 +1291,8 @@ __metadata:
     "@types/node": "npm:24.10.13"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:5.17.3"
-    hono: "npm:4.11.10"
+    astro: "npm:5.18.0"
+    hono: "npm:4.12.3"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.2.7"
     pino: "npm:10.3.1"
@@ -2468,9 +2468,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:5.17.3":
-  version: 5.17.3
-  resolution: "astro@npm:5.17.3"
+"astro@npm:5.18.0":
+  version: 5.18.0
+  resolution: "astro@npm:5.18.0"
   dependencies:
     "@astrojs/compiler": "npm:^2.13.0"
     "@astrojs/internal-helpers": "npm:0.7.5"
@@ -2541,7 +2541,7 @@ __metadata:
       optional: true
   bin:
     astro: astro.js
-  checksum: 10/37a02b133966f324585eb76a56bae641caad1dfc2c22badb5f9077ea739e7ad8ea6604b2324c781eb984912ef732f97b48c21c71bf797f1a27eb4560edf4226e
+  checksum: 10/f9a5b04328e69eba04647ebfc866b947c515b7ce47d21dce5c31d634da7a1685fdafb373a0c90bbd52d7eba453fd299a5ccb4da8f9eca07ca51736ee4fcbbc6a
   languageName: node
   linkType: hard
 
@@ -3730,10 +3730,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:4.11.10":
-  version: 4.11.10
-  resolution: "hono@npm:4.11.10"
-  checksum: 10/9b96432805eeaf59e783eb0a44e7be0957ddff28bb03f0f0a720792e9ad3563c8a036ed1e652bdb439f5f30546d3d6b71643be5187ff09603b4e6d877029c1de
+"hono@npm:4.12.3":
+  version: 4.12.3
+  resolution: "hono@npm:4.12.3"
+  checksum: 10/fbcfa88229fb824efb2d7011f4dc90b968999c1d2693ba698c6cae93b5874bb75e4b607f06776d88d08d26c2373c589bd6c44c4a939fc581867941383fa6e902
   languageName: node
   linkType: hard
 

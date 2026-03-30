@@ -48,7 +48,8 @@
         ]
     },
     "resolutions": {
-        "rollup": ">=4.59.0"
+        "rollup": ">=4.59.0",
+        "h3": ">=1.15.6"
     },
     "npmMinimalAgeGate": 1440
 }

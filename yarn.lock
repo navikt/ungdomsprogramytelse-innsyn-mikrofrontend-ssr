@@ -131,9 +131,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:5.0.2":
-  version: 5.0.2
-  resolution: "@astrojs/react@npm:5.0.2"
+"@astrojs/react@npm:5.0.3":
+  version: 5.0.3
+  resolution: "@astrojs/react@npm:5.0.3"
   dependencies:
     "@astrojs/internal-helpers": "npm:0.8.0"
     "@vitejs/plugin-react": "npm:^5.2.0"
@@ -145,7 +145,7 @@ __metadata:
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/8767751fefa9261eec1568076dbe669a957da7deb92e31861551f4556f09bace6e0ea738cc714316a6e3b1d7b5beb68458f2cc51eef5b76e840949624a02e103
+  checksum: 10/04e65d159b2ad74a31913267859290fc1c71b8e34eaa4526c136491bec479bfc005f25b6c693f9418707993ba5d0e2855ae6c09c98a05899544a76385def8ed7
   languageName: node
   linkType: hard
 
@@ -922,12 +922,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hono/node-server@npm:1.19.12":
-  version: 1.19.12
-  resolution: "@hono/node-server@npm:1.19.12"
+"@hono/node-server@npm:1.19.13":
+  version: 1.19.13
+  resolution: "@hono/node-server@npm:1.19.13"
   peerDependencies:
     hono: ^4
-  checksum: 10/aeb02f3c255cc9016d88ea4611eb105dbd8dca881b1b4e77256a41d6a18b8b45dd6f46ab35ef08becfa32e64c5ba77de7b5aa0af552e7fe67ce3079b94988c20
+  checksum: 10/67e453b0f6c0854244f3985eecbcf657b7d0247eb9404f2f507fec9242d8f8077ab8b0a212de1ac147290e76167e3598ca0df38940f6b63bde67f58526aba253
   languageName: node
   linkType: hard
 
@@ -1296,8 +1296,8 @@ __metadata:
   dependencies:
     "@astrojs/check": "npm:0.9.8"
     "@astrojs/node": "npm:10.0.4"
-    "@astrojs/react": "npm:5.0.2"
-    "@hono/node-server": "npm:1.19.12"
+    "@astrojs/react": "npm:5.0.3"
+    "@hono/node-server": "npm:1.19.13"
     "@navikt/aksel-icons": "npm:7.40.0"
     "@navikt/ds-css": "npm:7.40.0"
     "@navikt/ds-react": "npm:7.40.0"
@@ -1307,17 +1307,17 @@ __metadata:
     "@types/node": "npm:25.5.2"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:6.1.3"
-    hono: "npm:4.12.10"
+    astro: "npm:6.1.5"
+    hono: "npm:4.12.12"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.4.0"
     pino: "npm:10.3.1"
-    postcss: "npm:8.5.8"
+    postcss: "npm:8.5.9"
     postcss-prefix-selector: "npm:2.1.1"
     prettier: "npm:3.8.1"
     prettier-plugin-astro: "npm:0.14.1"
-    react: "npm:19.2.4"
-    react-dom: "npm:19.2.4"
+    react: "npm:19.2.5"
+    react-dom: "npm:19.2.5"
     rollup-plugin-import-map: "npm:3.0.0"
     tsx: "npm:4.21.0"
     typescript: "npm:6.0.2"
@@ -2489,9 +2489,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:6.1.3":
-  version: 6.1.3
-  resolution: "astro@npm:6.1.3"
+"astro@npm:6.1.5":
+  version: 6.1.5
+  resolution: "astro@npm:6.1.5"
   dependencies:
     "@astrojs/compiler": "npm:^3.0.1"
     "@astrojs/internal-helpers": "npm:0.8.0"
@@ -2509,7 +2509,6 @@ __metadata:
     cookie: "npm:^1.1.1"
     devalue: "npm:^5.6.3"
     diff: "npm:^8.0.3"
-    dlv: "npm:^1.1.3"
     dset: "npm:^3.1.4"
     es-module-lexer: "npm:^2.0.0"
     esbuild: "npm:^0.27.3"
@@ -2554,7 +2553,7 @@ __metadata:
       optional: true
   bin:
     astro: bin/astro.mjs
-  checksum: 10/dfe6b86bfaafef79aac1c9acfdd52f26a2bbda63430f2c76636260076669d645c75e9fbcb08ebdc8f46d93a7369828d129bd2fda3498335523f618f93d80260f
+  checksum: 10/24fee1db400077695836ed2b786ea9d3fe3814429913906be4b51cadba60d53a33888fa3edaa1d95a6aea4ceb54208d5e2c68447dbfc1227782475950374e2c5
   languageName: node
   linkType: hard
 
@@ -3702,10 +3701,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"hono@npm:4.12.10":
-  version: 4.12.10
-  resolution: "hono@npm:4.12.10"
-  checksum: 10/0e27311bec761e5197039d8b307cb3f2d31d5df4c9c17a36ab63ffbaec703ae214d158f495bac651e0264c4110d7bbfcebdeda5c1caaada194fe6f15c89a214f
+"hono@npm:4.12.12":
+  version: 4.12.12
+  resolution: "hono@npm:4.12.12"
+  checksum: 10/760617935cbc40fb20f2ffb4cbd5d59c3578a6838700be5f89a636a287bce59195d08f8e8e3551ca907796110457fb276327c155289d3776c151ed74ee02270f
   languageName: node
   linkType: hard
 
@@ -5058,7 +5057,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss@npm:8.5.8, postcss@npm:^8.5.6":
+"postcss@npm:8.5.9":
+  version: 8.5.9
+  resolution: "postcss@npm:8.5.9"
+  dependencies:
+    nanoid: "npm:^3.3.11"
+    picocolors: "npm:^1.1.1"
+    source-map-js: "npm:^1.2.1"
+  checksum: 10/b34661c6efca87f7bf747c6c943435e4bfef7617a238c3719103e607c605d16720682fb121b7ebd4f7f748228dfdf8711b82f7ffed80a5c4a9249c070ed5fd87
+  languageName: node
+  linkType: hard
+
+"postcss@npm:^8.5.6":
   version: 8.5.8
   resolution: "postcss@npm:8.5.8"
   dependencies:
@@ -5191,14 +5201,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:19.2.4":
-  version: 19.2.4
-  resolution: "react-dom@npm:19.2.4"
+"react-dom@npm:19.2.5":
+  version: 19.2.5
+  resolution: "react-dom@npm:19.2.5"
   dependencies:
     scheduler: "npm:^0.27.0"
   peerDependencies:
-    react: ^19.2.4
-  checksum: 10/ec17721a8cb131bc33480a9f738bc5bbfe4bd11b11cf69f3f473605346578a329ad26ceef6ef0761ea67a4b455803407dd7ed4ba3d8a5abd2cee8c32d221e498
+    react: ^19.2.5
+  checksum: 10/ba14b022c7191d27b723314b964a1a4d839832e6edd231294097e323973808f97ac647bcf182ab0104e20ae6532dbc36733aec3e8333a1446a7183099c96b255
   languageName: node
   linkType: hard
 
@@ -5209,10 +5219,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:19.2.4":
-  version: 19.2.4
-  resolution: "react@npm:19.2.4"
-  checksum: 10/18179fe217f67eb2d0bc61cd04e7ad3c282ea09a1dface7eacd71816f62609f4bbf566c447c704335284deb8397b00bca084e0cd60e6f437279a7498e2d0bfe0
+"react@npm:19.2.5":
+  version: 19.2.5
+  resolution: "react@npm:19.2.5"
+  checksum: 10/1c3c7ffecb90b7f89a5c3ef635e6811f3a84600097f203b918150cb7e6b0a52915e858e5b4c82317a520dffccfa46ee4819ccf92c59c5b2d6c25cffe258dd20c
   languageName: node
   linkType: hard
 

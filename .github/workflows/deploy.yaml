@@ -115,3 +115,9 @@ jobs:
           CLUSTER: prod-gcp
           RESOURCE: nais/prod-gcp/nais.yaml
           VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
+
+  sif-code-scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: navikt/sif-gha-workflows/.github/actions/sif-code-scan@main

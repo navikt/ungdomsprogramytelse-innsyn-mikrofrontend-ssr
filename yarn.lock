@@ -1042,13 +1042,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/analytics-types@npm:0.0.9":
-  version: 0.0.9
-  resolution: "@navikt/analytics-types@npm:0.0.9::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fanalytics-types%2F0.0.9%2F5919241a6dbb782eb101fff3234ce5c36d16e942"
-  checksum: 10/1a29959131750c9667fb6b6d9a7b811f88acc399d5612aed7748f76d1d1677b564d7f3c44ed50ab099d72644a250caf835c1b7f0032a50156145135eff7fe933
-  languageName: node
-  linkType: hard
-
 "@navikt/ds-css@npm:7.40.0":
   version: 7.40.0
   resolution: "@navikt/ds-css@npm:7.40.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fds-css%2F7.40.0%2F267682132732537194904a0498ce8971bf8b4922"
@@ -1082,17 +1075,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/nav-dekoratoren-moduler@npm:4.0.0":
-  version: 4.0.0
-  resolution: "@navikt/nav-dekoratoren-moduler@npm:4.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F4.0.0%2F65595610e69365df6008576d13e7f24511715683"
+"@navikt/nav-dekoratoren-moduler@npm:3.7.1":
+  version: 3.7.1
+  resolution: "@navikt/nav-dekoratoren-moduler@npm:3.7.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F3.7.1%2F09490a131cedd7779e35d413d20c36bd01ef57a0"
   dependencies:
-    "@navikt/analytics-types": "npm:0.0.9"
     csp-header: "npm:6.3.1"
     js-cookie: "npm:3.0.5"
   peerDependencies:
     html-react-parser: ">=5.x"
     react: ">=17.x"
-  checksum: 10/a64b07f9e8a19a618707f2f31bdf05189b10553dafd5cc119174c0c328898004da5fb76d052f5ec6ab60de50f50ddcbdd0337388d4a3a24f501bfd17997e0fb6
+  checksum: 10/adbf5e88831a8173a9451bd77d7a88320be1846cedd6794db91539bbece3339e99a94c79de04aa3017f36413f2f1b91024c81202d6f980593ccb5d40c476d46f
   languageName: node
   linkType: hard
 
@@ -1126,7 +1118,7 @@ __metadata:
     "@navikt/aksel-icons": "npm:7.40.0"
     "@navikt/ds-css": "npm:7.40.0"
     "@navikt/ds-react": "npm:7.40.0"
-    "@navikt/nav-dekoratoren-moduler": "npm:4.0.0"
+    "@navikt/nav-dekoratoren-moduler": "npm:3.7.1"
     "@navikt/oasis": "npm:4.1.4"
     "@opentelemetry/sdk-node": "npm:0.215.0"
     "@types/node": "npm:25.6.0"

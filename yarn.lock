@@ -35,12 +35,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/internal-helpers@npm:0.8.0":
-  version: 0.8.0
-  resolution: "@astrojs/internal-helpers@npm:0.8.0"
+"@astrojs/internal-helpers@npm:0.9.0":
+  version: 0.9.0
+  resolution: "@astrojs/internal-helpers@npm:0.9.0"
   dependencies:
-    picomatch: "npm:^4.0.3"
-  checksum: 10/9cfeb895c167d708a8b3b7cbc0c8114c15d36ee485db136a1a2e2137a1ae8f96d9655317b789f9226ffa5e11ac2a5365da0d87a3991b4a5f72bf83d77e75a026
+    picomatch: "npm:^4.0.4"
+  checksum: 10/e7eaf67cfbdfdb1eb63706b5addebd180b0d79ddcf1645af0b1c89720e80553da58af092b5bd3b5e6fff36960549b7626fe95232df2f1051d9f23948120c0a1b
   languageName: node
   linkType: hard
 
@@ -80,11 +80,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/markdown-remark@npm:7.1.0":
-  version: 7.1.0
-  resolution: "@astrojs/markdown-remark@npm:7.1.0"
+"@astrojs/markdown-remark@npm:7.1.1":
+  version: 7.1.1
+  resolution: "@astrojs/markdown-remark@npm:7.1.1"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.8.0"
+    "@astrojs/internal-helpers": "npm:0.9.0"
     "@astrojs/prism": "npm:4.0.1"
     github-slugger: "npm:^2.0.0"
     hast-util-from-html: "npm:^2.0.3"
@@ -105,20 +105,20 @@ __metadata:
     unist-util-visit: "npm:^5.1.0"
     unist-util-visit-parents: "npm:^6.0.2"
     vfile: "npm:^6.0.3"
-  checksum: 10/efb87d657cbd4c8a7e29d2156b6b6799c270706afa15db01399d8dbe22852e76b167209580808a0e28d0166b2faa5d461253aa4b64b19816a59767bf5277d323
+  checksum: 10/8f5a27e9799da4de99565bcf1f097b9f5589d631964784f33da52fecf26883dddeb975c6d9c9f6a633fd8ddeccdcf5baba6beb80c19690641e8ed29ec2972af4
   languageName: node
   linkType: hard
 
-"@astrojs/node@npm:10.0.5":
-  version: 10.0.5
-  resolution: "@astrojs/node@npm:10.0.5"
+"@astrojs/node@npm:10.0.6":
+  version: 10.0.6
+  resolution: "@astrojs/node@npm:10.0.6"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.8.0"
+    "@astrojs/internal-helpers": "npm:0.9.0"
     send: "npm:^1.2.1"
     server-destroy: "npm:^1.0.1"
   peerDependencies:
     astro: ^6.0.0
-  checksum: 10/3a8e3aa94cf581baf7b9d3cdbd132be3aa529d19f076d81919c8a8055e5773cbf9acb561771bb32ac529456ffc0077be43dd0faecdcc0fa3fa43d19aea097832
+  checksum: 10/d06ce7a432d200b962aeb5bab1dfa7583f02cfd8b680fc4af60a825208a6854c438374f3fb394ac1c40423e8dec87b30388d4675ddd972cc29031fa2049a8ea4
   languageName: node
   linkType: hard
 
@@ -131,21 +131,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/react@npm:5.0.3":
-  version: 5.0.3
-  resolution: "@astrojs/react@npm:5.0.3"
+"@astrojs/react@npm:5.0.4":
+  version: 5.0.4
+  resolution: "@astrojs/react@npm:5.0.4"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.8.0"
+    "@astrojs/internal-helpers": "npm:0.9.0"
     "@vitejs/plugin-react": "npm:^5.2.0"
     devalue: "npm:^5.6.4"
     ultrahtml: "npm:^1.6.0"
-    vite: "npm:^7.3.1"
+    vite: "npm:^7.3.2"
   peerDependencies:
     "@types/react": ^17.0.50 || ^18.0.21 || ^19.0.0
     "@types/react-dom": ^17.0.17 || ^18.0.6 || ^19.0.0
     react: ^17.0.2 || ^18.0.0 || ^19.0.0
     react-dom: ^17.0.2 || ^18.0.0 || ^19.0.0
-  checksum: 10/04e65d159b2ad74a31913267859290fc1c71b8e34eaa4526c136491bec479bfc005f25b6c693f9418707993ba5d0e2855ae6c09c98a05899544a76385def8ed7
+  checksum: 10/ac0e5ef39de17f52ba8c162f26a89f5aa1263b2564dd64cdfbbc31ca0056a3d944de6e21540eaacdfe3f446dbd571065a956bbe2514fe5a8b44dabdf6dedc7bc
   languageName: node
   linkType: hard
 
@@ -1224,6 +1224,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@navikt/analytics-types@npm:0.0.9":
+  version: 0.0.9
+  resolution: "@navikt/analytics-types@npm:0.0.9::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fanalytics-types%2F0.0.9%2F5919241a6dbb782eb101fff3234ce5c36d16e942"
+  checksum: 10/1a29959131750c9667fb6b6d9a7b811f88acc399d5612aed7748f76d1d1677b564d7f3c44ed50ab099d72644a250caf835c1b7f0032a50156145135eff7fe933
+  languageName: node
+  linkType: hard
+
 "@navikt/ds-css@npm:7.40.0":
   version: 7.40.0
   resolution: "@navikt/ds-css@npm:7.40.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fds-css%2F7.40.0%2F267682132732537194904a0498ce8971bf8b4922"
@@ -1257,16 +1264,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/nav-dekoratoren-moduler@npm:3.7.1":
-  version: 3.7.1
-  resolution: "@navikt/nav-dekoratoren-moduler@npm:3.7.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F3.7.1%2F09490a131cedd7779e35d413d20c36bd01ef57a0"
+"@navikt/nav-dekoratoren-moduler@npm:4.0.0":
+  version: 4.0.0
+  resolution: "@navikt/nav-dekoratoren-moduler@npm:4.0.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F4.0.0%2F65595610e69365df6008576d13e7f24511715683"
   dependencies:
+    "@navikt/analytics-types": "npm:0.0.9"
     csp-header: "npm:6.3.1"
     js-cookie: "npm:3.0.5"
   peerDependencies:
     html-react-parser: ">=5.x"
     react: ">=17.x"
-  checksum: 10/adbf5e88831a8173a9451bd77d7a88320be1846cedd6794db91539bbece3339e99a94c79de04aa3017f36413f2f1b91024c81202d6f980593ccb5d40c476d46f
+  checksum: 10/a64b07f9e8a19a618707f2f31bdf05189b10553dafd5cc119174c0c328898004da5fb76d052f5ec6ab60de50f50ddcbdd0337388d4a3a24f501bfd17997e0fb6
   languageName: node
   linkType: hard
 
@@ -1294,19 +1302,19 @@ __metadata:
   resolution: "@navikt/ungdomsprogramytelse-innsyn-mikrofrontend-ssr@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.8"
-    "@astrojs/node": "npm:10.0.5"
-    "@astrojs/react": "npm:5.0.3"
+    "@astrojs/node": "npm:10.0.6"
+    "@astrojs/react": "npm:5.0.4"
     "@hono/node-server": "npm:2.0.0"
     "@navikt/aksel-icons": "npm:7.40.0"
     "@navikt/ds-css": "npm:7.40.0"
     "@navikt/ds-react": "npm:7.40.0"
-    "@navikt/nav-dekoratoren-moduler": "npm:3.7.1"
+    "@navikt/nav-dekoratoren-moduler": "npm:4.0.0"
     "@navikt/oasis": "npm:4.1.4"
     "@opentelemetry/sdk-node": "npm:0.215.0"
     "@types/node": "npm:25.6.0"
     "@types/react": "npm:19.2.14"
     "@types/react-dom": "npm:19.2.3"
-    astro: "npm:6.1.8"
+    astro: "npm:6.1.9"
     hono: "npm:4.12.14"
     husky: "npm:9.1.7"
     lint-staged: "npm:16.4.0"
@@ -2488,13 +2496,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"astro@npm:6.1.8":
-  version: 6.1.8
-  resolution: "astro@npm:6.1.8"
+"astro@npm:6.1.9":
+  version: 6.1.9
+  resolution: "astro@npm:6.1.9"
   dependencies:
     "@astrojs/compiler": "npm:^3.0.1"
-    "@astrojs/internal-helpers": "npm:0.8.0"
-    "@astrojs/markdown-remark": "npm:7.1.0"
+    "@astrojs/internal-helpers": "npm:0.9.0"
+    "@astrojs/markdown-remark": "npm:7.1.1"
     "@astrojs/telemetry": "npm:3.3.1"
     "@capsizecss/unpack": "npm:^4.0.0"
     "@clack/prompts": "npm:^1.1.0"
@@ -2526,7 +2534,7 @@ __metadata:
     p-queue: "npm:^9.1.0"
     package-manager-detector: "npm:^1.6.0"
     piccolore: "npm:^0.1.3"
-    picomatch: "npm:^4.0.3"
+    picomatch: "npm:^4.0.4"
     rehype: "npm:^13.0.2"
     semver: "npm:^7.7.4"
     sharp: "npm:^0.34.0"
@@ -2540,9 +2548,9 @@ __metadata:
     ultrahtml: "npm:^1.6.0"
     unifont: "npm:~0.7.4"
     unist-util-visit: "npm:^5.1.0"
-    unstorage: "npm:^1.17.4"
+    unstorage: "npm:^1.17.5"
     vfile: "npm:^6.0.3"
-    vite: "npm:^7.3.1"
+    vite: "npm:^7.3.2"
     vitefu: "npm:^1.1.2"
     xxhash-wasm: "npm:^1.1.0"
     yargs-parser: "npm:^22.0.0"
@@ -2552,7 +2560,7 @@ __metadata:
       optional: true
   bin:
     astro: bin/astro.mjs
-  checksum: 10/4e0ca292177d3f0ff56590ace050602a9675fb4867daefbdd42a7d9de7d120bf1823e4c4d681dbb45834c93bd0a2ab52b8209d5b98206a9515879b9b44593538
+  checksum: 10/19bf6bb9018ace59cd8703a3f244bbe3e744245b748799384c1e8ac5b9ec9bd7c69580d9e34127f61a1d0cb232855b9bd7e1796e41a3ea33503cdffe4fc8a1df
   languageName: node
   linkType: hard
 
@@ -4029,10 +4037,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0, lru-cache@npm:^11.2.0, lru-cache@npm:^11.2.1":
+"lru-cache@npm:^11.0.0, lru-cache@npm:^11.1.0, lru-cache@npm:^11.2.1":
   version: 11.2.6
   resolution: "lru-cache@npm:11.2.6"
   checksum: 10/91222bbd59f793a0a0ad57789388f06b34ac9bb1613433c1d1810457d09db5cd3ec8943227ce2e1f5d6a0a15d6f1a9f129cb2c49ae9b6b10e82d4965fddecbef
+  languageName: node
+  linkType: hard
+
+"lru-cache@npm:^11.2.7":
+  version: 11.3.5
+  resolution: "lru-cache@npm:11.3.5"
+  checksum: 10/3701b77e87765a3aea453402a7850bdbf7e02445210f35bd5ba1561f601f605f488bf9932be4a3851a6664073924f671a1ec99c4a1a98c457e0d126872a3e04f
   languageName: node
   linkType: hard
 
@@ -5016,6 +5031,13 @@ __metadata:
   version: 4.0.3
   resolution: "picomatch@npm:4.0.3"
   checksum: 10/57b99055f40b16798f2802916d9c17e9744e620a0db136554af01d19598b96e45e2f00014c91d1b8b13874b80caa8c295b3d589a3f72373ec4aaf54baa5962d5
+  languageName: node
+  linkType: hard
+
+"picomatch@npm:^4.0.4":
+  version: 4.0.4
+  resolution: "picomatch@npm:4.0.4"
+  checksum: 10/f6ef80a3590827ce20378ae110ac78209cc4f74d39236370f1780f957b7ee41c12acde0e4651b90f39983506fd2f5e449994716f516db2e9752924aff8de93ce
   languageName: node
   linkType: hard
 
@@ -6329,15 +6351,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unstorage@npm:^1.17.4":
-  version: 1.17.4
-  resolution: "unstorage@npm:1.17.4"
+"unstorage@npm:^1.17.5":
+  version: 1.17.5
+  resolution: "unstorage@npm:1.17.5"
   dependencies:
     anymatch: "npm:^3.1.3"
     chokidar: "npm:^5.0.0"
     destr: "npm:^2.0.5"
-    h3: "npm:^1.15.5"
-    lru-cache: "npm:^11.2.0"
+    h3: "npm:^1.15.10"
+    lru-cache: "npm:^11.2.7"
     node-fetch-native: "npm:^1.6.7"
     ofetch: "npm:^1.5.1"
     ufo: "npm:^1.6.3"
@@ -6400,7 +6422,7 @@ __metadata:
       optional: true
     uploadthing:
       optional: true
-  checksum: 10/db66f4f7a49db7e769df70beb02b8368c4a4dd34a37af0dfe65e6370fc3a1d5691768b34ea6c2133daae3d79db0070c93f7c03289784dcfef755ebbad6c79643
+  checksum: 10/e0059c08e87a86d2a43dc2a49853fd6bc324f655f3dba59fec2b1eb59bb784495772013a5925017a2970d63b9921d31d9211d42a361f810d3c20bded57c13d46
   languageName: node
   linkType: hard
 
@@ -6448,7 +6470,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"vite@npm:^7.3.1":
+"vite@npm:^7.3.2":
   version: 7.3.2
   resolution: "vite@npm:7.3.2"
   dependencies:

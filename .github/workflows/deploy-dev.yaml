@@ -2,7 +2,6 @@ name: "Deploy dev"
 on:
     push:
         branches:
-            - "main"
             - "dev-*"
     workflow_dispatch:
 
@@ -84,11 +83,3 @@ jobs:
                   CLUSTER: dev-gcp
                   RESOURCE: nais/dev-gcp/nais.yaml
                   VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}
-
-    sif-code-scan:
-        runs-on: ubuntu-latest
-        permissions:
-            contents: "read"
-        steps:
-            - uses: actions/checkout@v6
-            - uses: navikt/sif-gha-workflows/.github/actions/sif-code-scan@main

@@ -1,0 +1,85 @@
+name: "Deploy dev"
+on:
+    push:
+        branches:
+            - "dev-*"
+    workflow_dispatch:
+
+jobs:
+    build:
+        name: "build"
+        runs-on: "ubuntu-latest"
+
+        permissions:
+            contents: "read"
+            id-token: "write"
+            packages: "write"
+
+        env:
+            YARN_NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
+
+        steps:
+            - uses: "actions/checkout@v6"
+
+            - uses: "actions/setup-node@v6"
+              with:
+                  node-version: 24
+                  cache: "yarn"
+
+            - name: "Install dependencies"
+              run: "yarn install --immutable"
+
+            - name: "Build application"
+              run: "yarn build"
+              env:
+                  ASTRO_KEY: ${{ secrets.ASTRO_KEY }}
+
+            - name: "Prune devDependencies"
+              run: "npm prune --omit=dev --legacy-peer-deps"
+
+            - name: "Upload to cdn"
+              uses: nais/deploy/actions/cdn-upload/v2@master
+              with:
+                  team: dusseldorf
+                  source: ./dist/client/_astro
+                  destination: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr"
+
+            - name: "Build and push"
+              uses: nais/docker-build-push@v0
+              id: docker-build-push
+              with:
+                  team: dusseldorf
+
+        outputs:
+            image: ${{ steps.docker-build-push.outputs.image }}
+
+    update-manifest-dev:
+        uses: navikt/tms-deploy/.github/workflows/oppdater-mikrofrontend-manifest-v3.yaml@main
+        needs: build
+        permissions:
+            contents: "read"
+        with:
+            id: "ungdomsprogramytelse-innsyn"
+            url: "http://ungdomsprogramytelse-innsyn-mikrofrontend-ssr.dusseldorf"
+            appname: "ungdomsprogramytelse-innsyn-mikrofrontend-ssr"
+            namespace: "dusseldorf"
+            cluster: dev-gcp
+            commitmsg: ${{ github.event.head_commit.message}}
+            fallback: "fallback"
+            ssr: true
+        secrets: inherit
+
+    deploy-dev:
+        runs-on: "ubuntu-latest"
+        permissions:
+            contents: "read"
+            id-token: "write"
+        needs: [ build, update-manifest-dev ]
+        steps:
+            - uses: "actions/checkout@v6"
+            - name: "Deploy to dev"
+              uses: "nais/deploy/actions/deploy@v2"
+              env:
+                  CLUSTER: dev-gcp
+                  RESOURCE: nais/dev-gcp/nais.yaml
+                  VAR: image=${{ needs.build.outputs.image }},version=${{ github.sha }}

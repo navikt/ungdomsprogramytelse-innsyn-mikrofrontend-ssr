@@ -3,6 +3,7 @@ on:
     push:
         branches:
             - "dev-*"
+            - "main"
     workflow_dispatch:
 
 jobs:
@@ -74,7 +75,7 @@ jobs:
         permissions:
             contents: "read"
             id-token: "write"
-        needs: [ build, update-manifest-dev ]
+        needs: [build, update-manifest-dev]
         steps:
             - uses: "actions/checkout@v6"
             - name: "Deploy to dev"

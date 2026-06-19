@@ -20,7 +20,7 @@ jobs:
             YARN_NPM_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
 
         steps:
-            - uses: "actions/checkout@v6"
+            - uses: "actions/checkout@v6.0.3"
 
             - uses: "actions/setup-node@v6"
               with:
@@ -77,7 +77,7 @@ jobs:
             id-token: "write"
         needs: [build, update-manifest-dev]
         steps:
-            - uses: "actions/checkout@v6"
+            - uses: "actions/checkout@v6.0.3"
             - name: "Deploy to dev"
               uses: "nais/deploy/actions/deploy@v2"
               env:

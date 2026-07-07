@@ -112,16 +112,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/node@npm:10.1.4":
-  version: 10.1.4
-  resolution: "@astrojs/node@npm:10.1.4"
+"@astrojs/node@npm:11.0.1":
+  version: 11.0.1
+  resolution: "@astrojs/node@npm:11.0.1"
   dependencies:
     "@astrojs/internal-helpers": "npm:0.10.0"
     send: "npm:^1.2.1"
     server-destroy: "npm:^1.0.1"
   peerDependencies:
-    astro: ^6.3.0
-  checksum: 10/5e701c01e8380fc5650f4941dbadd9d085f579d4be0e17d7fd48e105190f46853481d6f098ae36121d1eab071b0f02936b7573ca9f1ee000bc352d0a3dc0f7ae
+    astro: ^7.0.0
+  checksum: 10/9897920e5c513b6362676e98de023f3135ee4b13d8cfb751d6d971e00d69cd503c0bdaa068ae4ab2bb6a703ff78aac8decc83aea922c96c1174894f75af97f50
   languageName: node
   linkType: hard
 
@@ -1304,7 +1304,7 @@ __metadata:
   resolution: "@navikt/ungdomsprogramytelse-innsyn-mikrofrontend-ssr@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.9"
-    "@astrojs/node": "npm:10.1.4"
+    "@astrojs/node": "npm:11.0.1"
     "@astrojs/react": "npm:5.0.7"
     "@hono/node-server": "npm:2.0.4"
     "@navikt/aksel-icons": "npm:7.40.0"

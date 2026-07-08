@@ -51,6 +51,22 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/internal-helpers@npm:0.10.1":
+  version: 0.10.1
+  resolution: "@astrojs/internal-helpers@npm:0.10.1"
+  dependencies:
+    "@types/hast": "npm:^3.0.4"
+    "@types/mdast": "npm:^4.0.4"
+    js-yaml: "npm:^4.1.1"
+    picomatch: "npm:^4.0.4"
+    retext-smartypants: "npm:^6.2.0"
+    shiki: "npm:^4.0.2"
+    smol-toml: "npm:^1.6.0"
+    unified: "npm:^11.0.5"
+  checksum: 10/866d36373d04fe2059c5da7d64a20c4a484e61a9656c4023c0cb931a408175861f72f2b5e1078813f35fc4378b1f650e2f54384a693be2cfe6fffe52e052875f
+  languageName: node
+  linkType: hard
+
 "@astrojs/language-server@npm:^2.16.7":
   version: 2.16.8
   resolution: "@astrojs/language-server@npm:2.16.8"
@@ -112,16 +128,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/node@npm:10.1.4":
-  version: 10.1.4
-  resolution: "@astrojs/node@npm:10.1.4"
+"@astrojs/node@npm:11.0.2":
+  version: 11.0.2
+  resolution: "@astrojs/node@npm:11.0.2"
   dependencies:
-    "@astrojs/internal-helpers": "npm:0.10.0"
+    "@astrojs/internal-helpers": "npm:0.10.1"
     send: "npm:^1.2.1"
     server-destroy: "npm:^1.0.1"
   peerDependencies:
-    astro: ^6.3.0
-  checksum: 10/5e701c01e8380fc5650f4941dbadd9d085f579d4be0e17d7fd48e105190f46853481d6f098ae36121d1eab071b0f02936b7573ca9f1ee000bc352d0a3dc0f7ae
+    astro: ^7.0.0
+  checksum: 10/0757b268165c9897be99fb728fc77f4018a7d06a0b934bcfed8e127936abd8a399abed7613b5d63eea297468f8d6def677d5ebfb4c3f8ce3fc9f1c54b96b251c
   languageName: node
   linkType: hard
 
@@ -1304,7 +1320,7 @@ __metadata:
   resolution: "@navikt/ungdomsprogramytelse-innsyn-mikrofrontend-ssr@workspace:."
   dependencies:
     "@astrojs/check": "npm:0.9.9"
-    "@astrojs/node": "npm:10.1.4"
+    "@astrojs/node": "npm:11.0.2"
     "@astrojs/react": "npm:5.0.7"
     "@hono/node-server": "npm:2.0.4"
     "@navikt/aksel-icons": "npm:7.40.0"

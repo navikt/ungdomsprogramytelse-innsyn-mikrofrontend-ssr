@@ -3,7 +3,7 @@ import pino from 'pino';
 
 const sdk = new NodeSDK({
     spanProcessor: new tracing.SimpleSpanProcessor(new tracing.ConsoleSpanExporter()),
-    logRecordProcessor: new logs.SimpleLogRecordProcessor(new logs.ConsoleLogRecordExporter()),
+    logRecordProcessor: new logs.SimpleLogRecordProcessor({ exporter: new logs.ConsoleLogRecordExporter() }),
 });
 
 sdk.start();

@@ -34,7 +34,7 @@
         "@types/react-dom": "19.2.3",
         "hono": "4.12.28",
         "husky": "9.1.7",
-        "lint-staged": "17.0.8",
+        "lint-staged": "17.1.0",
         "postcss": "8.5.16",
         "postcss-prefix-selector": "2.1.1",
         "prettier": "3.9.4",

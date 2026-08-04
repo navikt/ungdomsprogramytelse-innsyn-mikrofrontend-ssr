@@ -1434,7 +1434,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/aksel-icons@npm:7.40.0, @navikt/aksel-icons@npm:^7.40.0":
+"@navikt/aksel-icons@npm:8.16.1":
+  version: 8.16.1
+  resolution: "@navikt/aksel-icons@npm:8.16.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Faksel-icons%2F8.16.1%2F14a6bd35401f4ab289af18de58f94399d621ebf7"
+  checksum: 10/7b90c92406d6ed6ba7c4116e7468c60af9eda2cab42984b7633d2da861b027fd199d9af4b32ab177d43e2ce25fd24a944ee10ff0386a8c4f9b9b68416bb27dc2
+  languageName: node
+  linkType: hard
+
+"@navikt/aksel-icons@npm:^7.40.0":
   version: 7.40.0
   resolution: "@navikt/aksel-icons@npm:7.40.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Faksel-icons%2F7.40.0%2F16d67c0742bcf2a2c38ad37be6c287765640fd7f"
   checksum: 10/3aa95caee5484355b8e1bbe06fa3f4c1dd2f5db48c3c27e445f8ce53438e3571949f957178b2dbc81163c148f5c5c000222e67afe60556955419ad06ce505fab
@@ -1448,10 +1455,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/ds-css@npm:7.40.0":
-  version: 7.40.0
-  resolution: "@navikt/ds-css@npm:7.40.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fds-css%2F7.40.0%2F267682132732537194904a0498ce8971bf8b4922"
-  checksum: 10/49f3fefd685a31da9dd231a1994c2a3d591bbb58f1013ddff395c5f53f9c758121a092730196e4ee1390097f2f69f806577f921e02053aa40a06f2ce80332e15
+"@navikt/ds-css@npm:8.16.1":
+  version: 8.16.1
+  resolution: "@navikt/ds-css@npm:8.16.1::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fds-css%2F8.16.1%2Fdd3196185f7119601a19b0910a5da1beb5e47c4f"
+  checksum: 10/f9f0977db32f1161c60e3e043629a508116e7140aa51af122e64df51523422f758a0d661bfbe0167e5d7fcfac087a23958d47a648605d233f27674ea7f118484
   languageName: node
   linkType: hard
 
@@ -1522,8 +1529,8 @@ __metadata:
     "@astrojs/node": "npm:11.0.2"
     "@astrojs/react": "npm:6.0.1"
     "@hono/node-server": "npm:2.0.11"
-    "@navikt/aksel-icons": "npm:7.40.0"
-    "@navikt/ds-css": "npm:7.40.0"
+    "@navikt/aksel-icons": "npm:8.16.1"
+    "@navikt/ds-css": "npm:8.16.1"
     "@navikt/ds-react": "npm:7.40.0"
     "@navikt/nav-dekoratoren-moduler": "npm:4.2.2"
     "@navikt/oasis": "npm:4.1.4"

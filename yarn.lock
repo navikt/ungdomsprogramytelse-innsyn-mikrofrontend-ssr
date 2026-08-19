@@ -1108,12 +1108,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hono/node-server@npm:2.0.12":
-  version: 2.0.12
-  resolution: "@hono/node-server@npm:2.0.12"
+"@hono/node-server@npm:2.1.1":
+  version: 2.1.1
+  resolution: "@hono/node-server@npm:2.1.1"
   peerDependencies:
     hono: ^4
-  checksum: 10/7900669baa2c62c97a25c2cd9dc4ba9e56bba572834fc392e8ce9d3d1aac7b78fdad6b72d2cb47bb668295253a964763a6098e546f0484cf9b96edb1d38ccdf3
+  checksum: 10/af031ec46684c7a201cf70ce2e14f17dcd64624b42bbbf5a84dc54d7a2a9fe77a96d3d0280a16affcbc99a2de682f8687ee63cf6f6cc3de2cd5bee22ebe1f7fe
   languageName: node
   linkType: hard
 
@@ -1533,7 +1533,7 @@ __metadata:
     "@astrojs/check": "npm:0.9.10"
     "@astrojs/node": "npm:11.0.3"
     "@astrojs/react": "npm:6.0.2"
-    "@hono/node-server": "npm:2.0.12"
+    "@hono/node-server": "npm:2.1.1"
     "@navikt/aksel-icons": "npm:7.40.0"
     "@navikt/ds-css": "npm:7.40.0"
     "@navikt/ds-react": "npm:7.40.0"

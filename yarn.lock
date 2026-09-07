@@ -1549,7 +1549,7 @@ __metadata:
     lint-staged: "npm:17.3.0"
     pino: "npm:10.3.1"
     postcss: "npm:8.5.26"
-    postcss-prefix-selector: "npm:2.1.1"
+    postcss-prefix-selector: "npm:2.2.0"
     prettier: "npm:3.9.6"
     prettier-plugin-astro: "npm:0.14.1"
     react: "npm:19.2.8"
@@ -4452,12 +4452,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"postcss-prefix-selector@npm:2.1.1":
-  version: 2.1.1
-  resolution: "postcss-prefix-selector@npm:2.1.1"
+"postcss-prefix-selector@npm:2.2.0":
+  version: 2.2.0
+  resolution: "postcss-prefix-selector@npm:2.2.0"
   peerDependencies:
     postcss: ^8.0.0
-  checksum: 10/d8f6758713a9a1f3d5e66eb29e067e9ab8de8aec2c7801b806e896a1f58e6f28c86d406ae09c5d85608c8172ad396bd3c5b3e354f9a5c8b1d047f7a1714d4abe
+  checksum: 10/934101e99deba33e2dc5291e89b1808e333784155802c5a3029de8662b614cd14239a8de48dd2230c64d728241bca19b738a2463d67163acb5cd31a66d6054e3
   languageName: node
   linkType: hard
 

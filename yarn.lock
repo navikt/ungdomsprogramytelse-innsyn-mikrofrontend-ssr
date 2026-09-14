@@ -28,9 +28,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding-darwin-arm64@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-darwin-arm64@npm:0.4.0"
+  conditions: os=darwin & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-binding-darwin-x64@npm:0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-binding-darwin-x64@npm:0.3.2"
+  conditions: os=darwin & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler-binding-darwin-x64@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-darwin-x64@npm:0.4.0"
   conditions: os=darwin & cpu=x64
   languageName: node
   linkType: hard
@@ -42,9 +56,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding-linux-arm64-gnu@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-linux-arm64-gnu@npm:0.4.0"
+  conditions: os=linux & cpu=arm64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-binding-linux-arm64-musl@npm:0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-binding-linux-arm64-musl@npm:0.3.2"
+  conditions: os=linux & cpu=arm64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler-binding-linux-arm64-musl@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-linux-arm64-musl@npm:0.4.0"
   conditions: os=linux & cpu=arm64 & libc=musl
   languageName: node
   linkType: hard
@@ -56,9 +84,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding-linux-x64-gnu@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-linux-x64-gnu@npm:0.4.0"
+  conditions: os=linux & cpu=x64 & libc=glibc
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-binding-linux-x64-musl@npm:0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-binding-linux-x64-musl@npm:0.3.2"
+  conditions: os=linux & cpu=x64 & libc=musl
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler-binding-linux-x64-musl@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-linux-x64-musl@npm:0.4.0"
   conditions: os=linux & cpu=x64 & libc=musl
   languageName: node
   linkType: hard
@@ -72,6 +114,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding-wasm32-wasi@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-wasm32-wasi@npm:0.4.0"
+  dependencies:
+    "@napi-rs/wasm-runtime": "npm:^1.2.2"
+  conditions: cpu=wasm32
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-binding-win32-arm64-msvc@npm:0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-binding-win32-arm64-msvc@npm:0.3.2"
@@ -79,9 +130,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding-win32-arm64-msvc@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-win32-arm64-msvc@npm:0.4.0"
+  conditions: os=win32 & cpu=arm64
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-binding-win32-x64-msvc@npm:0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-binding-win32-x64-msvc@npm:0.3.2"
+  conditions: os=win32 & cpu=x64
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler-binding-win32-x64-msvc@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding-win32-x64-msvc@npm:0.4.0"
   conditions: os=win32 & cpu=x64
   languageName: node
   linkType: hard
@@ -122,6 +187,42 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@astrojs/compiler-binding@npm:0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-binding@npm:0.4.0"
+  dependencies:
+    "@astrojs/compiler-binding-darwin-arm64": "npm:0.4.0"
+    "@astrojs/compiler-binding-darwin-x64": "npm:0.4.0"
+    "@astrojs/compiler-binding-linux-arm64-gnu": "npm:0.4.0"
+    "@astrojs/compiler-binding-linux-arm64-musl": "npm:0.4.0"
+    "@astrojs/compiler-binding-linux-x64-gnu": "npm:0.4.0"
+    "@astrojs/compiler-binding-linux-x64-musl": "npm:0.4.0"
+    "@astrojs/compiler-binding-wasm32-wasi": "npm:0.4.0"
+    "@astrojs/compiler-binding-win32-arm64-msvc": "npm:0.4.0"
+    "@astrojs/compiler-binding-win32-x64-msvc": "npm:0.4.0"
+  dependenciesMeta:
+    "@astrojs/compiler-binding-darwin-arm64":
+      optional: true
+    "@astrojs/compiler-binding-darwin-x64":
+      optional: true
+    "@astrojs/compiler-binding-linux-arm64-gnu":
+      optional: true
+    "@astrojs/compiler-binding-linux-arm64-musl":
+      optional: true
+    "@astrojs/compiler-binding-linux-x64-gnu":
+      optional: true
+    "@astrojs/compiler-binding-linux-x64-musl":
+      optional: true
+    "@astrojs/compiler-binding-wasm32-wasi":
+      optional: true
+    "@astrojs/compiler-binding-win32-arm64-msvc":
+      optional: true
+    "@astrojs/compiler-binding-win32-x64-msvc":
+      optional: true
+  checksum: 10/8c6c8b82fb38b0ead6b5ec7b5f5ab4a307bc1fdbaa7418a714950dc256f1fc7d1f5a0273fec4818f3d78fa3553c30cb8c27d4745caefbca474f208a26123d4eb
+  languageName: node
+  linkType: hard
+
 "@astrojs/compiler-rs@npm:^0.3.2":
   version: 0.3.2
   resolution: "@astrojs/compiler-rs@npm:0.3.2"
@@ -131,7 +232,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@astrojs/compiler@npm:^2.13.1, @astrojs/compiler@npm:^2.9.1":
+"@astrojs/compiler-rs@npm:^0.4.0":
+  version: 0.4.0
+  resolution: "@astrojs/compiler-rs@npm:0.4.0"
+  dependencies:
+    "@astrojs/compiler-binding": "npm:0.4.0"
+  checksum: 10/4b152024cd6253bebc4beadda0a292bbd6eb78d28c96d254c31ada89112b05a84723d6d4161b953d708d5b9a778fd0973f271f3de503d3c9089b20bc252993b1
+  languageName: node
+  linkType: hard
+
+"@astrojs/compiler@npm:^2.13.1":
   version: 2.13.1
   resolution: "@astrojs/compiler@npm:2.13.1"
   checksum: 10/ad34cc12c9180e83d75132affd21b9b9a891ab95e6c1a1fb29c6b97241b935bcf35ad79f3328ea2e30569b18270275562d98ab2426d493f492fecc45ffab58f7
@@ -1446,6 +1556,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@napi-rs/wasm-runtime@npm:^1.2.2":
+  version: 1.2.3
+  resolution: "@napi-rs/wasm-runtime@npm:1.2.3"
+  dependencies:
+    "@tybys/wasm-util": "npm:^0.10.3"
+  peerDependencies:
+    "@emnapi/core": ^1.7.1 || ^2.0.0-alpha.4
+    "@emnapi/runtime": ^1.7.1 || ^2.0.0-alpha.4
+  checksum: 10/86f7f092309eb005ff9e456c12a9f81ae06ff823602740a8c9c54b2dfc17620d9b4d88c4cd179541c794aed521ac57c7e37457a00e87a624867d78f6bbce0d7c
+  languageName: node
+  linkType: hard
+
 "@navikt/aksel-icons@npm:7.40.0, @navikt/aksel-icons@npm:^7.40.0":
   version: 7.40.0
   resolution: "@navikt/aksel-icons@npm:7.40.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Faksel-icons%2F7.40.0%2F16d67c0742bcf2a2c38ad37be6c287765640fd7f"
@@ -1551,7 +1673,7 @@ __metadata:
     postcss: "npm:8.5.26"
     postcss-prefix-selector: "npm:2.1.1"
     prettier: "npm:3.9.6"
-    prettier-plugin-astro: "npm:0.14.1"
+    prettier-plugin-astro: "npm:1.0.0"
     react: "npm:19.2.8"
     react-dom: "npm:19.2.8"
     rollup-plugin-import-map: "npm:3.0.0"
@@ -1974,6 +2096,13 @@ __metadata:
   version: 0.4.0
   resolution: "@pinojs/redact@npm:0.4.0"
   checksum: 10/2210ffb6b38357853d47239fd0532cc9edb406325270a81c440a35cece22090127c30c2ead3eefa3e608f2244087485308e515c431f4f69b6bd2e16cbd32812b
+  languageName: node
+  linkType: hard
+
+"@prettier/parse-srcset@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "@prettier/parse-srcset@npm:3.1.0"
+  checksum: 10/1acb8c932ea2b252f7969701a3da7b6c2cea153ecbba1155327fce9d8adb910696b1660aa3007c894cf2381ff90b51017f1cde1e6549f7dc333c43dd0c4f89fa
   languageName: node
   linkType: hard
 
@@ -4472,14 +4601,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-astro@npm:0.14.1":
-  version: 0.14.1
-  resolution: "prettier-plugin-astro@npm:0.14.1"
+"prettier-plugin-astro@npm:1.0.0":
+  version: 1.0.0
+  resolution: "prettier-plugin-astro@npm:1.0.0"
   dependencies:
-    "@astrojs/compiler": "npm:^2.9.1"
-    prettier: "npm:^3.0.0"
-    sass-formatter: "npm:^0.7.6"
-  checksum: 10/b814fab0303fec49a64889019dfefa44e0ed44f3da746994ba746478d3aa40e7c1b418e4493fa87501c453badf16c17ae1bfe6139e13e80c55aa90fe4354ae04
+    "@astrojs/compiler-rs": "npm:^0.4.0"
+    "@prettier/parse-srcset": "npm:^3.1.0"
+    sass-formatter: "npm:^0.8.0"
+  peerDependencies:
+    prettier: ^3.5.3
+  checksum: 10/5bfa102189d7539a8f7c2aed1425fc095089f6ed40f0cbe47c7a57afc17c86ee9a67508b816afc764e5c52acfeb24137c4914345d4333b2f16386890308fae4a
   languageName: node
   linkType: hard
 
@@ -4492,7 +4623,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.0.0, prettier@npm:^3.5.0":
+"prettier@npm:^3.5.0":
   version: 3.8.3
   resolution: "prettier@npm:3.8.3"
   bin:
@@ -4805,12 +4936,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass-formatter@npm:^0.7.6":
-  version: 0.7.9
-  resolution: "sass-formatter@npm:0.7.9"
+"sass-formatter@npm:^0.8.0":
+  version: 0.8.0
+  resolution: "sass-formatter@npm:0.8.0"
   dependencies:
     suf-log: "npm:^2.5.3"
-  checksum: 10/aed84f17d8b7f4c7621ce6c306a5eccb756ed701e801e97730a444061ee3c0476fd79b01492096598cd4f700c45152e7b18b096a343823b4cdcba823a23a376b
+  bin:
+    sass-formatter: dist/cli.js
+  checksum: 10/6df15935d6bd9a11abcccdaffa275b07ddb4816ad54885b5578f14bd8edbf242bb7218e745d07e8c39e2f3b8c61eee9f0e821d9f4e022b4abc11f529baffa780
   languageName: node
   linkType: hard
 

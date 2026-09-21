@@ -1492,17 +1492,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@navikt/nav-dekoratoren-moduler@npm:4.2.2":
-  version: 4.2.2
-  resolution: "@navikt/nav-dekoratoren-moduler@npm:4.2.2::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F4.2.2%2F9982b2b38e397df0e9b0cd886beb3d16d0b97a61"
+"@navikt/nav-dekoratoren-moduler@npm:4.3.0":
+  version: 4.3.0
+  resolution: "@navikt/nav-dekoratoren-moduler@npm:4.3.0::__archiveUrl=https%3A%2F%2Fnpm.pkg.github.com%2Fdownload%2F%40navikt%2Fnav-dekoratoren-moduler%2F4.3.0%2Fd2d64c4afd0201f3a1e8ec8fba9651c05fdfb736"
   dependencies:
     "@navikt/analytics-types": "npm:0.0.9"
     csp-header: "npm:6.3.1"
-    js-cookie: "npm:3.0.7"
+    js-cookie: "npm:3.0.8"
   peerDependencies:
     html-react-parser: ">=5.x"
     react: ">=17.x"
-  checksum: 10/865823b3e04c2cd2a7f8b218e1399e46e4ab03ab19de17abd220ae1317ffd37d480d537a15ad7e246adeb28e67aec005d8b3f551bbf6c6f8a8c96f74cc3a2f15
+  checksum: 10/33af6487c0b209e55795f2f37b5c2c4996bf98320a0b6ddc796b1f49fc8724196b22cdca2621aa3b7e7366f7d2b9ed0b200b6fb6b882f431f2c16f52e0c0ee99
   languageName: node
   linkType: hard
 
@@ -1536,7 +1536,7 @@ __metadata:
     "@navikt/aksel-icons": "npm:7.40.0"
     "@navikt/ds-css": "npm:7.40.0"
     "@navikt/ds-react": "npm:7.40.0"
-    "@navikt/nav-dekoratoren-moduler": "npm:4.2.2"
+    "@navikt/nav-dekoratoren-moduler": "npm:4.3.0"
     "@navikt/oasis": "npm:4.2.2"
     "@opentelemetry/sdk-node": "npm:0.222.0"
     "@types/node": "npm:26.5.1"
@@ -3717,10 +3717,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"js-cookie@npm:3.0.7":
-  version: 3.0.7
-  resolution: "js-cookie@npm:3.0.7"
-  checksum: 10/c0542acd416806182baaaecaae9a1dd7754b48699589c5c3a088495cee9fc2e44f81e66567b6e76e16d29c469655fdc9cd948edb2cfd9ece446f8817b9046ce9
+"js-cookie@npm:3.0.8":
+  version: 3.0.8
+  resolution: "js-cookie@npm:3.0.8"
+  checksum: 10/6bc10dc1ef0ad4780cd43a0413702d0b8d9d8d167c4fb605ae66c388270dece6b4cad4c8944654cc67b6e0e7639da379a7b48e7b7ad8711a80f60aba6a915548
   languageName: node
   linkType: hard
 

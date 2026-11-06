@@ -35,7 +35,12 @@ export default defineConfig({
     }),
     env: {
         schema: {
-            INNSYN_UNGDOMSYTELSE_DELTAKER_URL: envField.string({
+            LINK_CARD_URL: envField.string({
+                context: 'server',
+                access: 'secret',
+                default: '#',
+            }),
+            SERVICE_NAME: envField.string({
                 context: 'server',
                 access: 'secret',
                 default: '#',

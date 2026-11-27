@@ -39,7 +39,7 @@ jobs:
               run: "npm prune --omit=dev --legacy-peer-deps"
 
             - name: "Upload to cdn"
-              uses: nais/deploy/actions/cdn-upload/v2@6fe576e10c7a325643bad96566bd6cb180a2f782 # master
+              uses: nais/deploy/actions/cdn-upload/v2@427e29c94d911626a023a76f402f6dcae1f840b7 # master
               with:
                   team: dusseldorf
                   source: ./dist/client/_astro
@@ -79,7 +79,7 @@ jobs:
         steps:
             - uses: "actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1" # v7
             - name: "Deploy to dev"
-              uses: "nais/deploy/actions/deploy@6fe576e10c7a325643bad96566bd6cb180a2f782" # v2
+              uses: "nais/deploy/actions/deploy@427e29c94d911626a023a76f402f6dcae1f840b7" # v3
               env:
                   CLUSTER: dev-gcp
                   RESOURCE: nais/dev-gcp/nais.yaml
